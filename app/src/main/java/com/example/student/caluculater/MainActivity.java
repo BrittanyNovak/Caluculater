@@ -64,13 +64,14 @@ public class MainActivity extends ActionBarActivity {
             case "*":
                 fTotal = fNum * sNum;
                 break;
+
         }
 
         EditText etTotal = (EditText)findViewById(R.id.etTotal);
-        etTotal.setText(total);
+        firstNum = Integer.toString(fTotal);
+        etTotal.setText(firstNum);
 
         total = "";
-        firstNum =Integer.toString(fTotal);
         secondNum = "";
     }
 
